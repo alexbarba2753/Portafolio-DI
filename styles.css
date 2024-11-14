@@ -375,11 +375,11 @@ input{
         flex-direction: column;
         position: absolute;
         top: 60px;
-        right: 1%;
+        right: 0%;
         background-color: #125a73ef;
         padding: 10px;
         border-radius: 8px;
-        width: 200px;
+        width: 90%;
         opacity: 0;
         transition: opacity 0.2s linear;
         display: flex;
