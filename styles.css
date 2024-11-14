@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* HEADER */
+
+header{
+    background: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80') center / cover fixed;
+
+}
+
+.header1{
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    align-items: center;
+    background-color: #000a;
+    padding: 0 30px;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: 0 0 20px #000;
+}
+
+
+.header1 input,label {
+    display: none;
+}
+
+.menu-header{
+    display: flex;
+}
+
+.menu-header li{
+    padding: 0 10px;
+    cursor: pointer;
+    transform: translate(0);
+    transition: 0.5s;
+    color: #fff;
+}
+
+.menu-header li:hover{
+    transition: 0.5s;
+    transform: translateY(-3px);
+    color: #96d4ff;
+}
+
+.menu-header li:active{
+    transform: scale(0.9);
+}
+
+
+/* HERO*/ 
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-text{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    margin: auto;
+}
+
+.hero-text h1{
+    display: flex;
+    justify-content: left;
+    padding: 20px 0;
+    font-family: 'Bebas Neue';
+    font-size: 80px;
+}
+
+.hero-text p{
+    text-align: left;
+}
+
+.hero-btn{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 20px 0;
+}
+
+button{
+    background-color: #1f7cbd;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transform: translate(0);
+    transition: 0.5s;
+    font-size: 16px;
+    border: none;
+    
+    
+}
+
+button:hover{
+    background-color: #2aa1f4;
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+.hero-img{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img img{
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+    padding: 20px 0;
+}
+
+/* MAIN */ 
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 50px;
+}
+
+.titulo h2{
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+}
+
+.contenedor-main{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 50px;   
+    flex-wrap: wrap;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #0002;
+    border-radius: 20px;
+    
+    width: 400px;
+}
+
+.img-contenedor{
+    flex: 1 1 250px;
+}
+
+.img-contenedor img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.text-contenedor{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+
+.btn-top{
+    width: 110px;
+    background-color: #000;
+}
+
+.btn-top:hover{
+    background-color: #0007;
+
+}
+
+.btn-down{
+    font-size: 16px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.btn2{
+    background-color: #3bb453;
+}
+
+.btn2:hover{
+    background-color: #45e565;
+}
+.text-contenedor button:hover{
+    transition: 0.5s;
+    transform: translateY(-3px);
+}
+
+.text-contenedor button:active{
+    transform: scale(0.9)
+}
+
+/*Footer*/
+
+footer{
+    height: 100%;
+    background-color: #1f7cbd;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    gap: 20px;
+}
+
+.search-box{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-search{
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-text h3{
+    font-size: 25px;
+}
+
+.contacto{
+    display: flex;
+}
+
+.contacto p{
+    margin-left: 10px;
+}
+
+.contacto i:hover{
+    transition: 0.5s;
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+input{
+    height: 50px;
+    font-size: 18px;
+}
+
+
+.input-text{
+    width: 60%;
+    padding: 0 15px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.input-search{
+    width: 100px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    color: #fff;
+    background-color: #2eceaf;
+    transform: translateY(0px);
+    transition: 0.5s;
+}
+
+.input-search:hover{
+    background-color: #29dfbb;
+    transform: translateY(-2px);
+    transition: 0.5s;
+}
+
+.input-search:active{
+    transition: 0.2s;
+    transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contenedor-main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor{
+        width: 80%;
+        margin: auto;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+
+    .search-box{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .input-text{
+        width: auto;
+    }
+
+    .footer-search{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text{
+        width: 80%;
+    }
+
+    .hero-text h1{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-text p{
+        text-align: justify;
+    }
+
+    .hero-img{
+        width: 80%;
+    }
+
+    .header1 label {
+        display: initial;
+    }
+
+    .menu-header {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #125a73ef;
+        padding: 20px;
+        border-radius: 8px;
+        width: 100px;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: opacity 0.2s linear, transform 0.2s linear;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        border: 1px solid #2ac6fc;
+        
+    }
+
+    .menu-header li{
+        padding: 10px 0;
+    }
+
+    #hmbrg:checked~.menu-header{
+        opacity: 1;
+        transform: translateX(0);
+        transition: opacity 0.5s ease;
+    }
+
+
+}
