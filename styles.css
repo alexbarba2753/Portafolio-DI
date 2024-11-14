@@ -381,7 +381,7 @@ input{
         border-radius: 8px;
         width: 200px;
         opacity: 0;
-        transform: translateX(100%);
+        transform: translateX(0);
         transition: opacity 0.2s linear, transform 0.2s linear;
         display: flex;
         align-content: center;
@@ -403,7 +403,6 @@ input{
     #hmbrg:checked~.menu-header{
         opacity: 1;
         transform: translateX(0);
-        transition: opacity 0.5s ease;
     }
 
 
