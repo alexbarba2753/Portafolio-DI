@@ -349,6 +349,10 @@ input{
         align-items: center;
     }
 
+    .footer-search p{
+        text-align: center;
+    }
+
     .hero-text{
         width: 80%;
     }
