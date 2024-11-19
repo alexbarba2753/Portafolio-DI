@@ -83,7 +83,7 @@ header{
     display: flex;
     justify-content: left;
     padding: 20px 0;
-    font-family: 'Bebas Neue';
+    font-family: 'Bebas Neue',sans-serif;
     font-size: 80px;
 }
 
@@ -147,7 +147,7 @@ button:active{
 }
 
 .titulo h2{
-    font-family: 'Bebas Neue';
+    font-family: 'Bebas Neue',sans-serif;
     font-size: 50px;
 }
 
@@ -379,32 +379,31 @@ input{
         flex-direction: column;
         position: absolute;
         top: 60px;
-        right: -15%;
+        right: 1%;
         background-color: #125a73ef;
         padding: 10px;
         border-radius: 8px;
-        width: 90%;
-        opacity: 0;
-        transition: opacity 0.2s linear;
+        width: 200px;
         display: flex;
         align-content: center;
         align-items: center;
         border: 1px solid #2ac6fc;
         margin: auto;
         gap: 30px;
+        display: none;
     }
 
     .menu-header li{
+        display: flex;
         padding: 5px 5px;
         font-size: 30px;
         font-weight: 600;
-        border-top: 0.5px solid #fff;
-        border-bottom: 0.5px solid #fff;
         border-radius: 10px;
+        justify-content: center;
     }
 
     #hmbrg:checked~.menu-header{
-        opacity: 1;
+        display: initial;
 
     }
 
